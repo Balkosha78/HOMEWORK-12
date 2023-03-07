@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         Author author = new Author("Лев", "Толстой");
@@ -6,5 +8,10 @@ public class Main {
         Book crimeAndPunishment = new Book("Преступление и наказание", 1866, author1);
         System.out.println(crimeAndPunishment.getAuthor() + crimeAndPunishment.getName() + crimeAndPunishment.getPublicationYear());
         System.out.println(warAndPeas.getAuthor() + warAndPeas.getName() + warAndPeas.getPublicationYear());
+        if (author1.equals(author)){
+            System.out.println("Равны");
+        } else {
+            System.out.println("Не равны");
+        }
     }
 }
